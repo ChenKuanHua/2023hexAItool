@@ -35,7 +35,7 @@ $(document).ready(function () {
   // ----排序----
 
   // 選單出現
-  $('.filter-btn').click(function (e) {
+  $('.filter .filter-btn:eq(1)').click(function (e) {
     $('.filter-dropdown-menu').toggleClass('show');
   });
   //由新到舊
