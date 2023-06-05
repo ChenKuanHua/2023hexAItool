@@ -171,9 +171,14 @@ a:hover {
     margin: 40px 0;
 }
 .banner-text p {
-  width: 660px;
+  width: 50%;
   margin: 80px 0;
   line-height: 1.2;
+}
+@media (max-width:768px) {
+  .banner-text p {
+    font-size: 28px;
+  }
 }
 .animation img {
     width: 540px;
@@ -459,6 +464,16 @@ a:hover {
     margin: 80px 0;
     text-align: center;
 }
+@media (max-width:768px) {
+  .bg-white {
+    border-radius: 20px;
+  }
+  .bg-white h2 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+}
 
 .search {
   position:relative;
@@ -616,10 +631,10 @@ a:hover {
   color:#020202;
 }
 
-.pagination a:hover:not(.active) {
+.pagination a:hover:not(.disabled) {
   background-color: #f2f2f2;
 }
-.pagination .active {
+.pagination .active a{
   color:#FFF;
   background-color: #020202;
 }
@@ -857,4 +872,10 @@ a:hover {
 }
 .fz-xxl {
   font-size: calc(7.5*var(--base));
+}
+
+@media (max-width:768px) {
+  .fz-xxl {
+    font-size: 48px;
+  }
 }
