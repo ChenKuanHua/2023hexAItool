@@ -1,6 +1,6 @@
-# 2023hexaitool.github.io
 
-六角學院2023年工程師體驗營證書任務 Lv3
+# 六角學院2023年工程師體驗營證書任務 Lv3
+網址：[2023hexaitool.github.io](https://chenkuanhua.github.io/2023hexaitool.github.io/)
 
 ## 作業等級表
 * LV1：做其中一頁的 RWD 網頁頁面，畫面不可顯示 x 軸
