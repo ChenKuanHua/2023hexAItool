@@ -113,11 +113,15 @@ $(document).ready(function () {
         e.preventDefault();
         pageId = e.target.dataset.page;
         data.page = Number(pageId);
-
-        if (!pageId) {
-          data.page = Number(pagesData.current_page) + 1
+        
+        //點選上一頁或下一頁pageId 都是undefined
+        if (!pageId){
+          if (e.target.classList.contains('pre')) {
+            data.page = Number(pagesData.current_page) - 1
+          } else if (e.target.classList.contains('next')) {
+            data.page = Number(pagesData.current_page) + 1
+          }
         }
-
         getData(data);
       });
     });
@@ -127,6 +131,16 @@ $(document).ready(function () {
   function renderPages() {
     let pageStr = '';
 
+    if (pagesData.has_pre) {
+      pageStr += `<li class="page-item">
+      <a class="page-link pre" href="#">
+        <span class="material-icons">
+          chevron_left
+        </span>
+      </a>
+    </li>`
+    };
+
     for (let i = 1; i <= pagesData.total_pages; i += 1) {
       pageStr += /*html*/`<li class="page-item ${pagesData.current_page == i ? 'active' : ''}" >
       <a class="page-link ${pagesData.current_page == i ? 'disabled' : ''}" href="#"  data-page="${i}">${i}</a>
@@ -135,7 +149,7 @@ $(document).ready(function () {
 
     if (pagesData.has_next) {
       pageStr += `<li class="page-item">
-      <a class="page-link" href="#">
+      <a class="page-link next" href="#">
         <span class="material-icons">
           chevron_right
         </span>
