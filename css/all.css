@@ -797,6 +797,9 @@ a:hover {
   color: #FFF;
   background-color: #020202;
 }
+.pagination span {
+  pointer-events: none;
+}
 
 .callToAction {
   margin-top: 80px;
