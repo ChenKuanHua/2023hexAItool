@@ -11,7 +11,7 @@
 3. 需自行撰寫，若有參考同學作業，請附上參考來源
 
 #### 任務內容
-依照作業等級，完成 [設計稿](https://www.figma.com/file/Yo8m2rXe3OLqcAWZ3sOck9/%E5%85%AD%E8%A7%92_%E8%BB%9F%E9%AB%94?node-id=39-627&t=IiN6ZGxwXlNEhRew-0) 切版、串接 API（需至少完成 Lv1）
+依照作業等級，完成 [設計稿](https://www.figma.com/file/Yo8m2rXe3OLqcAWZ3sOck9/%E5%85%AD%E8%A7%92_%E8%BB%9F%E9%AB%94?node-id=39-627&t=IiN6ZGxwXlNEhRew-0) 切版、串接 [API](https://hackmd.io/wA0Zeuk8QI-i7jeEXVssIA?view)（需至少完成 Lv1）
 
 #### 作業等級表
 * LV1：做其中一頁的 RWD 網頁頁面，畫面不可顯示 x 軸
