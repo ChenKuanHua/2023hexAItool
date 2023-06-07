@@ -221,7 +221,7 @@ a:hover {
   /* 在電腦版時不顯示 */
   position: absolute;
   top: 81px;
-  width: 100%;
+  width: 97%;
   min-height: calc(100vh - 81px);
   /* 佔滿整個瀏覽器高度扣掉 navbar 高度 */
   background-color: #000000;
